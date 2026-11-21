@@ -21,6 +21,14 @@
 | FORWARD_ENTAILMENT | 0.54 | 0.47 | 0.50 |
 | NEGATIVE_OTHER | 0.24 | 0.43 | 0.31 |
 
+## Official DiCo-NLI scorer (Dev)
+- Official evaluation completed successfully (return code 0) using the Track 1 Dev reference CSV and a two-column instance_id,label submission.
+- weighted_f1: **0.46118120718176436**
+- soft_cons: **0.5956678700361011** (165 of 277 reversible pairs)
+- hard_cons: **0.37906137184115524** (105 of 277 reversible pairs)
+- accuracy: **0.45**; macro_f1: **0.444948429633124**.
+- SoftCons evaluates directional compatibility; HardCons evaluates whether both predictions are correct. They are different from paired-example accuracy.
+
 ## Errors and reversed pairs
 - 142 of 363 errors (39.1%) were false NEGATIVE_OTHER predictions from other classes.
 - 56 examples confused FORWARD_ENTAILMENT and BACKWARD_ENTAILMENT (31 backward to forward, 25 forward to backward).
